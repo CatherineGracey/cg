@@ -10,4 +10,6 @@ app.get('/', function(request, response){
   response.send('<h1>CatherineGracey.com</h1><p>Thanks for your interest in this site. It is currently under redevelopment, and will be back online soon. While you wait, please check out my existing portfolio at <a href="http://www.centaurmagic.com">Centaur Magic</a>.');
 });
 
-server.listen(4000);
+var port = process.env.PORT || '4000';
+app.set('port', port);
+server.listen(port);
