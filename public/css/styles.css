@@ -1,0 +1,20 @@
+body {
+  padding: 0;
+  margin: auto;
+  background-color: #FFE1FF;
+  color: #551A8B;
+  font-family: 'Muli', sans-serif;
+}
+
+header {
+  padding: 5%;
+  margin: auto;
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+section {
+  padding: 5%;
+  margin: auto;
+}

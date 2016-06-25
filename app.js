@@ -5,9 +5,10 @@ var path = require('path');
 var app = express();
 var server = http.createServer(app);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'html')));
 
-app.get('/', function(request, response){
-  response.send('<h1>CatherineGracey.com</h1><p>Thanks for your interest in this site. It is currently under redevelopment, and will be back online soon. While you wait, please check out my existing portfolio at <a href="http://www.centaurmagic.com">Centaur Magic</a>.');
+app.use(function(request, response){
+  response.send(404);
 });
 
 var port = process.env.PORT || '4000';
