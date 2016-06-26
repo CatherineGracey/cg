@@ -10,11 +10,73 @@ header {
   padding: 5%;
   margin: auto;
   text-align: center;
+  font-size: 36px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+nav {
+  padding: 2.5% 5%;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  clear: both;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  padding: 5px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+  text-decoration: underline;
+}
+
+section {
+  padding: 2.5% 5%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 2.5% 0px 5% 0px;
   font-size: 26px;
   font-family: 'Architects Daughter', cursive;
 }
 
-section {
-  padding: 5%;
-  margin: auto;
+.funFacts ul::before {
+  content: "Fun Facts:";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.funFacts ul {
+  float: left;
+  width: 52.5%;
+  list-style: none;
+  padding: 0px 2.5% 5px 0px;
+}
+
+.funFacts li {
+  padding: 0.5% 0px;
+}
+
+.topGraphic {
+  display: inline-block;
+  max-width: 45%;
+  max-height: 600px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.highlight::after {
+  content: ": ";
 }
