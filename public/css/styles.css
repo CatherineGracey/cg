@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: auto;
+  max-width: 1200px;
   background-color: #FFE1FF;
   color: #551A8B;
   font-family: 'Muli', sans-serif;
@@ -28,11 +29,12 @@ nav ul {
 
 nav li {
   float: left;
-  padding: 5px;
+  padding-right: 2%;
 }
 
 nav a {
   text-decoration: none;
+  padding: 5px;
 }
 
 nav a:hover, nav a:active {
@@ -83,12 +85,20 @@ h1 {
   content: ": ";
 }
 
-.gallery {
+.gallery, .entry, .gallery h2, .subEntry {
   clear: both;
+}
+
+.entry {
+  padding-bottom: 20px;
 }
 
 pre {
   background: black;
   color: white;
   padding: 5px;
+}
+
+pre p {
+  margin: 0;
 }
