@@ -4,6 +4,7 @@ body {
   background-color: #FFE1FF;
   color: #551A8B;
   font-family: 'Muli', sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -60,7 +61,7 @@ h1 {
   float: left;
   width: 52.5%;
   list-style: none;
-  padding: 0px 2.5% 5px 0px;
+  padding: 0px 2.5% 16px 0px;
 }
 
 .funFacts li {
@@ -68,9 +69,10 @@ h1 {
 }
 
 .topGraphic {
-  display: inline-block;
-  max-width: 45%;
+  float: right;
+  max-width: 42.5%;
   max-height: 600px;
+  padding: 0px 0px 16px 2.5%;
 }
 
 .highlight {
