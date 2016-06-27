@@ -82,3 +82,13 @@ h1 {
 .highlight::after {
   content: ": ";
 }
+
+.gallery {
+  clear: both;
+}
+
+pre {
+  background: black;
+  color: white;
+  padding: 5px;
+}

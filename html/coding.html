@@ -31,18 +31,45 @@
 
     <div class="funFacts">
       <ul>
-        <li><span class="highlight">First computer</span>Commodore 64</li>
+        <li><span class="highlight">First computer</span>Commodore 128</li>
+        <li><span class="highlight">Personal best typing speed</span>107 wpm</li>
         <li><span class="highlight">First computer language</span>HTML</li>
         <li><span class="highlight">First website launched</span>1997 on Geocities</li>
+        <li><span class="highlight">Strongest computer language</span>JavaScript</li>
       </ul>
-      <img src="images/crosswordCodeSnippet.png" alt="Part of a function that builds an HTML crossword from a JSON object." class="topGraphic">
+      <img src="images/crosswordCodeSnippet.png" alt="Screenshot of a function that builds crossword in HTML from a JSON object." class="topGraphic">
     </div>
 
 
+    <p>Thanks for your interest in my coding work. I am currently rewriting this section to provide greater detail. In the meanwhile, please visit my alternative coding portfolio at <a href="http://www.centaurmagic.com">Centaur Magic</a>.</p>
 
     <div class="gallery">
+      <div class="entry">
+        <p><span class="highlight">What</span><span class="galleryTitle">Fizz Buzz</span> is a counting game. Players begin counting at 1, and move around the circle, increasing the count with each player. In every game there are two special numbers, representing "fizz" and "buzz". If the number the player is up to is divisible by this number, the player must say "fizz" or "buzz" respectively. If the number is divisible by both, the player must say "fizz buzz".
+        <br>For example, if "fizz" is 3 and "buzz" is 5, players would count: 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, etc.</p>
+        <p><span class="highlight">Language</span>JavaScript</p>
+        <p><span class="highlight">How</span>Here is my solution to the challenge.</p>
+        <pre><code>
+          <p>function fizzBuzz(fizz, buzz, end){
+            <br>  var answer = [];
+            <br>  for (var i = 1; i <= end; i++){
+            <br>    if (i % fizz === 0 &amp;&amp; i % buzz === 0){
+            <br>    answer.push(&quot;Fizz Buzz&quot;);
+            <br>    } else if (i % fizz === 0){
+            <br>    answer.push(&quot;Fizz&quot;);
+            <br>    } else if (i % buzz === 0){
+            <br>    answer.push(&quot;Buzz&quot;);
+            <br>    } else {
+            <br>    answer.push(i);
+            <br>    }
+            <br>  }
+            <br>  console.log(answer.join(&quot;, &quot;));
+            <br>}
+          </p>
+        </code></pre>
+      </div>
     </div>
-    <p>Thanks for your interest in my coding work. I am currently rewriting this section to provide greater detail. In the meanwhile, please visit my alternative coding portfolio at <a href="http://www.centaurmagic.com">Centaur Magic</a>.</p>
+
   </section>
 
 </body>
