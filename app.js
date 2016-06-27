@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'html')));
 
 app.use(function(request, response){
-  response.send(404);
+  response.sendStatus(404);
 });
 
 var port = process.env.PORT || '4000';
