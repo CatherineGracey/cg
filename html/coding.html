@@ -49,19 +49,24 @@
 
       <div class="entry">
         <p><span class="highlight">Title</span><a href="http://www.languagelearning.ninja/">LanguageLearning.Ninja</a></p>
-        <a href="http://www.languagelearning.ninja/"><img src="images/lln-header.png" class="topGraphic"></a>
+        <a href="http://www.languagelearning.ninja/"><img src="images/lln-header.png" class="topGraphic" alt="Logo for LanguageLearning.Ninja."></a>
         <p><span class="highlight">What</span>Language Learning Ninja is a website that teaches foreign languages, and currently includes Danish, English, French, German, Italian and Spanish. The website is divided into modules that allow users to learn using traditional methods such as flash cards, to learn through games, and to explore texts written in the language that they are learning. As users interact with the language they are learning their progress is saved to their profile, and content is generated for them based on spaced repetition algorithms that I have designed.</p>
         <p>A particular challenge with this project has been to write code that is not restricted to predefined language pairs. Each language on the website combines with every other language (where translation work is complete), and I have designed each module and the database so that new languages can be added based on user interest.</p>
         <p><span class="highlight">Languages and Technologies</span>JavaScript, Node.js, Express.js, Jade, MongoDB and Passport.js</p>
 
+        <p class="subEntry"><span class="highlight">Module</span>Crossword</p>
+        <img src="images/lln-crossword.png" class="topGraphic" alt="Screenshot of crossword puzzle.">
+        <p>This module generates a crossword for the player based on their progress. The clues are words in the speaker's native language, and the answers are the translations.</p>
+        <p>Because spaced repetition is such a critical part of this website, it was important that the crossword adapt to what the user needs to learn, rather than fitting words into a predefined pattern. The crossword generates the board as it adds words, so each layout has been created specifically for that user. The biggest challenge was in selecting the words; if I added words based purely on spaced repetition, boards would often be generated with only two or three words because the words placed were too small to build from. To overcome this problem the crossword first categorises words based on length. It works through the longest words first, then the medium length ones, before finally filling in the gaps with small words. The priority of words within each category is still according to the spaced repetition, so there is flexibility to build a good puzzle while also ensuring that the user learns and practices new words at the set rate.</p>
+
         <p class="subEntry"><span class="highlight">Module</span>Flash cards</p>
-        <img src="images/lln-flashcardvocab.png" class="topGraphic">
+        <img src="images/lln-flashcardvocab.png" class="topGraphic" alt="Screenshot of vocabulary flashcards.">
         <p>A popular method for learning new vocabulary is through flashcards. A word is shown and the user must correctly translate it.</p>
         <p>This version of vocabulary flashcards is slightly different from most flash card systems. Most systems translate in both directions, requiring users to both recognise and produce a word. Most systems also display just the word that needs to be translated in isolation. My version only requires users to translate into the target language, because if users are able to produce a word then they should be able to recognise it, although the reverse is not always the case. This version also embeds the word that is to be translated into a sentence in the target language asking for a translation, so that if users are speaking in that language and they need to ask how to translate something they are already familiar with how to ask the question.</p>
         <p>A particular challenge with the flashcards was how the database stores a user's progress. The spaced repetition is based on which word the user needs to practice next, but the module asks a user to translate into that language, and a word might have several possible translations. To work around this problem, the spaced repetition code takes into account how well the user performed against expectations and against other possible correct answers.</p>
 
         <p class="subEntry"><span class="highlight">Module</span>Hangman</p>
-        <img src="images/lln-hangman.png" class="topGraphic">
+        <img src="images/lln-hangman.png" class="topGraphic" alt="Screenshot of hangman game.">
         <p>This module is the classic hangman game where players must guess a mystery word by suggesting letters that might be contained within it. In this version the word that players must guess is taken from the language that they are learning. The translation of the word is displayed as a hint below. As players guess letters the corresponding button changes colour to show progress; alphabets are specific to the language being learned. Correct guesses are added to the puzzle and incorrect answers cost a life and update the game graphic.</p>
         <p>When a player completes the game, with either a loss or a victory, the spaced repetition code evaluates how well they performed and increases or decreases the time until the word is seen again accordingly.</p>
 
@@ -69,7 +74,7 @@
 
       <div class="entry">
         <p><span class="highlight">Title</span><a href="http://www.mathsmakesmyday.com/">Maths Makes My Day</a> website</p>
-        <img src="images/mmmd-practice.png" class="topGraphic">
+        <img src="images/mmmd-practice.png" class="topGraphic" alt="Screenshot of equation practicing page.">
         <p><span class="highlight">What</span>Maths Makes My Day is a private tutoring business based in Melbourne, Australia. The design brief was to create a static website with resources for parents and students that are related to their studies in maths and science.</p>
         <p><span class="highlight">Languages and Technologies</span>HTML, CSS, JavaScript and Node.js</p>
         <p><span class="highlight">Features</span>As the business developed, it became apparent that many students struggled with basic equations. I added a page that allows students to practice addition, subtraction, multiplication and division. Students can focus on one of these areas or practice all of them randomly. The difficulty of the equations increases based on how many equations the student has already answered correctly.</p>

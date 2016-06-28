@@ -41,6 +41,10 @@ nav a:hover, nav a:active {
   text-decoration: underline;
 }
 
+a {
+  color: #551A8B;
+}
+
 section {
   padding: 2.5% 5%;
   margin: auto;
