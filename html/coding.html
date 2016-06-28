@@ -51,7 +51,7 @@
         <p><span class="highlight">Title</span><a href="http://www.languagelearning.ninja/">LanguageLearning.Ninja</a></p>
         <a href="http://www.languagelearning.ninja/"><img src="images/lln-header.png" class="topGraphic" alt="Logo for LanguageLearning.Ninja."></a>
         <p><span class="highlight">What</span>Language Learning Ninja is a website that teaches foreign languages, and currently includes Danish, English, French, German, Italian and Spanish. The website is divided into modules that allow users to learn using traditional methods such as flash cards, to learn through games, and to explore texts written in the language that they are learning. As users interact with the language they are learning their progress is saved to their profile, and content is generated for them based on spaced repetition algorithms that I have designed.</p>
-        <p>A particular challenge with this project has been to write code that is not restricted to predefined language pairs. Each language on the website combines with every other language (where translation work is complete), and I have designed each module and the database so that new languages can be added based on user interest.</p>
+        <p>A particular challenge with this project has been to write code that is not restricted to predefined language pairs. Each language on the website combines with every other language (where translation work is complete), and I have designed each module and the database so that new languages can be added based on user interest. A sampling of the modules is below.</p>
         <p><span class="highlight">Languages and Technologies</span>JavaScript, Node.js, Express.js, Jade, MongoDB and Passport.js</p>
 
         <p class="subEntry"><span class="highlight">Module</span>Crossword</p>
@@ -69,6 +69,11 @@
         <img src="images/lln-hangman.png" class="topGraphic" alt="Screenshot of hangman game.">
         <p>This module is the classic hangman game where players must guess a mystery word by suggesting letters that might be contained within it. In this version the word that players must guess is taken from the language that they are learning. The translation of the word is displayed as a hint below. As players guess letters the corresponding button changes colour to show progress; alphabets are specific to the language being learned. Correct guesses are added to the puzzle and incorrect answers cost a life and update the game graphic.</p>
         <p>When a player completes the game, with either a loss or a victory, the spaced repetition code evaluates how well they performed and increases or decreases the time until the word is seen again accordingly.</p>
+
+        <p class="subEntry"><span class="highlight">Module</span>Memory pairs</p>
+        <img src="images/lln-memorypairs.png" class="topGraphic" alt="Screenshot of memory card matching game.">
+        <p>Memory is a classic game where pairs of cards are arranged face down. Players must turn over two cards. If they match the cards are removed from the board; if they do not match the cards are turned face down in their original positions and the player must try again to find a pair.</p>
+        <p>I have modified this game so that players must match a word in the language they are learning with its meaning. The meaning card could be the word in the player's native language, a numerical representation if the word is a number, or a picture of the object or activity. Using graphics and numerals, rather than translations, encourages the player to think directly in the language that they are learning.</p>
 
       </div>
 
