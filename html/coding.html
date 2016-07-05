@@ -37,11 +37,13 @@
         <li><span class="highlight">First website launched</span>1997 on Geocities</li>
         <li><span class="highlight">Strongest computer language</span>JavaScript</li>
         <li><span class="highlight">Primary online training source</span><a href="https://teamtreehouse.com/catherinegracey">Treehouse</a></li>
+        <li><span class="highlight">Git repositories</span><a href="https://github.com/CatherineGracey">GitHub</a></li>
       </ul>
       <img src="images/crosswordCodeSnippet.png" alt="Screenshot of a function that builds crossword in HTML from a JSON object." class="topGraphic">
     </div>
 
-    <p>Thanks for your interest in my coding work. This section is divided into two parts: <a href="#projects">coding projects</a>, which represent larger pieces of work, and <a href="#samples">coding samples</a>, which are my solutions to coding exercises and challenges that I have found on the web.</p>
+    <p>Thanks for your interest in my coding work. This page contains coding projects, which represent larger pieces of work. For coding samples, please check out one of my repositiories at <a href="https://github.com/CatherineGracey">GitHub</a>.</p>
+    <p>Most of my code is written in JavaScript. I have also worked in Python/Jython and Java.</p>
 
     <div class="gallery">
 
@@ -55,150 +57,38 @@
         <p><span class="highlight">Languages and Technologies</span>JavaScript, Node.js, Express.js, Jade, MongoDB and Passport.js</p>
 
         <p class="subEntry"><span class="highlight">Module</span>Crossword</p>
-        <img src="images/lln-crossword.png" class="topGraphic" alt="Screenshot of crossword puzzle.">
+        <a href="http://www.languagelearning.ninja/"><img src="images/lln-crossword.png" class="topGraphic" alt="Screenshot of crossword puzzle."></a>
         <p>This module generates a crossword for the player based on their progress. The clues are words in the speaker's native language, and the answers are the translations.</p>
         <p>Because spaced repetition is such a critical part of this website, it was important that the crossword adapt to what the user needs to learn, rather than fitting words into a predefined pattern. The crossword generates the board as it adds words, so each layout has been created specifically for that user. The biggest challenge was in selecting the words; if I added words based purely on spaced repetition, boards would often be generated with only two or three words because the words placed were too small to build from. To overcome this problem the crossword first categorises words based on length. It works through the longest words first, then the medium length ones, before finally filling in the gaps with small words. The priority of words within each category is still according to the spaced repetition, so there is flexibility to build a good puzzle while also ensuring that the user learns and practices new words at the set rate.</p>
 
         <p class="subEntry"><span class="highlight">Module</span>Hangman</p>
-        <img src="images/lln-hangman.png" class="topGraphic" alt="Screenshot of hangman game.">
+        <a href="http://www.languagelearning.ninja/"><img src="images/lln-hangman.png" class="topGraphic" alt="Screenshot of hangman game."></a>
         <p>This module is the classic hangman game where players must guess a mystery word by suggesting letters that might be contained within it. In this version the word that players must guess is taken from the language that they are learning. The translation of the word is displayed as a hint below. As players guess letters the corresponding button changes colour to show progress; alphabets are specific to the language being learned. Correct guesses are added to the puzzle and incorrect answers cost a life and update the game graphic.</p>
         <p>When a player completes the game, with either a loss or a victory, the spaced repetition code evaluates how well they performed and increases or decreases the time until the word is seen again accordingly.</p>
 
         <p class="subEntry"><span class="highlight">Module</span>Flash cards</p>
-        <img src="images/lln-flashcardvocab.png" class="topGraphic" alt="Screenshot of vocabulary flashcards.">
+        <a href="http://www.languagelearning.ninja/"><img src="images/lln-flashcardvocab.png" class="topGraphic" alt="Screenshot of vocabulary flashcards."></a>
         <p>A popular method for learning new vocabulary is through flashcards. A word is shown and the user must correctly translate it.</p>
         <p>This version of vocabulary flashcards is slightly different from most flash card systems. Most systems translate in both directions, requiring users to both recognise and produce a word. Most systems also display just the word that needs to be translated in isolation. My version only requires users to translate into the target language, because if users are able to produce a word then they should be able to recognise it, although the reverse is not always the case. This version also embeds the word that is to be translated into a sentence in the target language asking for a translation, so that if users are speaking in that language and they need to ask how to translate something they are already familiar with how to ask the question.</p>
         <p>A particular challenge with the flashcards was how the database stores a user's progress. The spaced repetition is based on which word the user needs to practice next, but the module asks a user to translate into that language, and a word might have several possible translations. To work around this problem, the spaced repetition code takes into account how well the user performed against expectations and against other possible correct answers.</p>
 
         <p class="subEntry"><span class="highlight">Module</span>Memory pairs</p>
-        <img src="images/lln-memorypairs.png" class="topGraphic" alt="Screenshot of memory card matching game.">
+        <a href="http://www.languagelearning.ninja/"><img src="images/lln-memorypairs.png" class="topGraphic" alt="Screenshot of memory card matching game."></a>
         <p>Memory is a classic game where pairs of cards are arranged face down. Players must turn over two cards. If they match the cards are removed from the board; if they do not match the cards are turned face down in their original positions and the player must try again to find a pair.</p>
         <p>I have modified this game so that players must match a word in the language they are learning with its meaning. The meaning card could be the word in the player's native language, a numerical representation if the word is a number, or a picture of the object or activity. Using graphics and numerals, rather than translations, encourages the player to think directly in the language that they are learning.</p>
 
         <p class="subEntry"><span class="highlight">Module</span>Word find</p>
-        <img src="images/lln-wordfind.png" class="topGraphic" alt="Screenshot of word find.">
+        <a href="http://www.languagelearning.ninja/"><img src="images/lln-wordfind.png" class="topGraphic" alt="Screenshot of word find."></a>
         <p>Word finds are another popular word game that I have adapted to language learning. In this version players are given a list of words in their native language, and they must find the translations on the board. Gaps are filled in with random letters from the alphabet of the language that the player is learning. When a word has been found, the clue changes to include the translation of the word.</p>
         <p>With this module, the spaced repetition works by evaluating how quickly players were able to find a particular word. If players are unable to translate a word they can click on the clue to see the translation. The software tracks these hints and updates the spacing accordingly.</p>
       </div>
 
       <div class="entry">
         <p><span class="highlight">Title</span><a href="http://www.mathsmakesmyday.com/">Maths Makes My Day</a> website</p>
-        <img src="images/mmmd-practice.png" class="topGraphic" alt="Screenshot of equation practicing page.">
+        <a href="http://www.mathsmakesmyday.com/practice.html"><img src="images/mmmd-practice.png" class="topGraphic" alt="Screenshot of equation practicing page."></a>
         <p><span class="highlight">What</span>Maths Makes My Day is a private tutoring business based in Melbourne, Australia. The design brief was to create a static website with resources for parents and students that are related to their studies in maths and science.</p>
         <p><span class="highlight">Languages and Technologies</span>HTML, CSS, JavaScript and Node.js</p>
         <p><span class="highlight">Features</span>As the business developed, it became apparent that many students struggled with basic equations. I added a page that allows students to practice addition, subtraction, multiplication and division. Students can focus on one of these areas or practice all of them randomly. The difficulty of the equations increases based on how many equations the student has already answered correctly.</p>
-      </div>
-
-      <h2 id="samples">Coding Samples</h2>
-
-      <div class="entry">
-        <p><span class="highlight">Title</span>Fizz Buzz</p>
-        <p><span class="highlight">What</span>Fizz Buzz is a counting game. Players begin counting at 1, and move around the circle, increasing the count with each player. In every game there are two special numbers, representing "fizz" and "buzz". If the number the player is up to is divisible by this number, the player must say "fizz" or "buzz" respectively. If the number is divisible by both, the player must say "fizz buzz".
-        <br>For example, if "fizz" is 3 and "buzz" is 5, players would count: 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, etc.</p>
-        <p><span class="highlight">Language</span>JavaScript</p>
-        <pre><code>
-function fizzBuzz(fizz, buzz, end){
-  var answer = [];
-  for (var i = 1; i &lt;= end; i++){
-    if (i % fizz === 0 &amp;&amp; i % buzz === 0){
-    answer.push(&quot;Fizz Buzz&quot;);
-    } else if (i % fizz === 0){
-    answer.push(&quot;Fizz&quot;);
-    } else if (i % buzz === 0){
-    answer.push(&quot;Buzz&quot;);
-    } else {
-    answer.push(i);
-    }
-  }
-  console.log(answer.join(&quot;, &quot;));
-  return answer;
-}
-        </code></pre>
-      </div>
-
-      <div class="entry">
-        <p><span class="highlight">Title</span>Trick or Treat</p>
-        <p><span class="highlight">What</span>This challenge assumes that a group of children have dressed up for Halloween and gone in search of candy. Children dressed as vampires get 3 pieces of candy from each house, zombies get 4 pieces, and witches get 5. If the candy is divided equally between the children, how many pieces will each child receive given the number of houses they visit?
-        <br>For example, if a group of children has 1 vampire, 2 zombies and 3 witches, and they visit 4 houses, the children will each get 17 pieces of candy.</p>
-        <p><span class="highlight">Language</span>JavaScript</p>
-        <pre><code>
-function trickOrTreat(vampires, zombies, witches, houses){
-  var children = vampires + zombies + witches;
-  var candyPerHouse = (vampires * 3) + (zombies * 4) + (witches * 5);
-  var candyTotal = candyPerHouse * houses;
-  var candyPerChild = Math.floor(candyTotal / children);
-  console.log(candyPerChild);
-  return candyPerChild;
-}
-        </code></pre>
-      </div>
-
-      <div class="entry">
-        <p><span class="highlight">Title</span>Scale a picture up and down</p>
-        <p><span class="highlight">What</span>This challenge came from Introduction to Computing and Progamming in Python. The requirement was to write a general scaleUp function and a general scaleDown function that will take a picture and return a new picture either twice or half as big using <code>makeEmptyPicture(width, height)</code>. I chose to make a general scaling function that could scale either up or down, and then wrote two driver functions that would call the main function with the appropriate percentages predefined.</p>
-        <p><span class="highlight">Language(s)</span>Python/Jython (JES)</p>
-        <pre><code>
-def scaleUp():
-  file = pickAFile()
-  picture = makePicture(file)
-  explore(picture)
-  scaledPic = scalePicture(picture, 200)
-  explore(scaledPic)
-
-def scaleDown():
-  file = pickAFile()
-  picture = makePicture(file)
-  explore(picture)
-  scaledPic = scalePicture(picture, 50)
-  explore(scaledPic)
-
-def scalePicture(picture, percentage):
-  #Calculate dimensions.
-  width = getWidth(picture)
-  height = getHeight(picture)
-  scaleWidth = int(width * percentage / 100)
-  scaleHeight = int(height * percentage / 100)
-  increment = 100.0 / percentage
-  scaledPic = makeEmptyPicture(scaleWidth, scaleHeight)
-  #Copy into new image.
-  sourceX = 0
-  for x in range(0, scaleWidth):
-    sourceY = 0
-    for y in range(0, scaleHeight):
-      #repaint(scaledPic)
-      origPixel = getPixel(picture, int(sourceX), int(sourceY))
-      newPixel = getPixel(scaledPic, x, y)
-      colour = getColor(origPixel)
-      setColor(newPixel, colour)
-      sourceY = sourceY + increment
-    sourceX = sourceX + increment
-  return scaledPic
-        </code></pre>
-      </div>
-
-      <div class="entry">
-        <p><span class="highlight">Title</span>Mirror a picture on the diagonal</p>
-        <p><span class="highlight">What</span>This challenge came from Introduction to Computing and Progamming in Python. The requirement was to write a function to mirror along the diagonal from (0, height) to (width, 0). My solution modifies the picture object that is passed to it as an argument, rather than creating a new image.</p>
-        <p><span class="highlight">Language(s)</span>Python/Jython (JES)</p>
-        <pre><code>
-def mirrorOnDiagonal(picture):
-  width = getWidth(picture)
-  height = getHeight(picture)
-  #Stop the loops before it runs out of image to copy into on a landscape orientation.
-  if width > height:
-    width = height
-    endPoint = height
-  else:
-    endPoint = width
-  mirrorPoint = endPoint
-  for x in range(0, width):
-    for y in range(0, mirrorPoint):
-      originalPixel = getPixel(picture, x, y)
-      changedPixel = getPixel(picture, (endPoint - y - 1) , (endPoint - x - 1))
-      colour = getColor(originalPixel)
-      setColor(changedPixel, colour)
-    mirrorPoint = mirrorPoint - 1
-        </code></pre>
       </div>
 
     </div>
