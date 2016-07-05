@@ -14,11 +14,13 @@ header {
   text-align: center;
   font-size: 36px;
   font-family: 'Architects Daughter', cursive;
+  border-top: 10px solid #FFE6FF;
 }
 
 nav {
-  padding: 2.5% 5%;
+  padding: 2.5% 5% 5%;
   font-size: 20px;
+  border-top: 10px solid #FFE6FF;
 }
 
 nav ul {
@@ -48,6 +50,7 @@ a {
 section {
   padding: 2.5% 5%;
   margin: auto;
+  border-top: 10px solid #FFE6FF;
 }
 
 h1 {
@@ -57,9 +60,14 @@ h1 {
 }
 
 .funFacts ul::before {
-  content: "Fun Facts:";
+  content: "Did you know?";
   font-size: 20px;
   font-weight: bold;
+}
+
+.funFacts {
+  border-top: 10px solid #FFE6FF;
+  padding-top: 2.5%;
 }
 
 .funFacts ul {
@@ -92,8 +100,14 @@ h1 {
   clear: both;
 }
 
+.subEntry {
+  border-top: 10px solid #FFE6FF;
+  padding-top: 20px;
+}
+
 .entry {
   padding-bottom: 20px;
+  border-top: 10px solid #FFE6FF;
 }
 
 pre {
