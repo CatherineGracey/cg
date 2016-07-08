@@ -1,26 +1,45 @@
 body {
   padding: 0;
   margin: auto;
-  max-width: 1200px;
-  background-color: #FFE1FF;
+  background-color: #FFEBFF;
   color: #551A8B;
   font-family: 'Muli', sans-serif;
   font-size: 16px;
 }
 
+.band1 {
+  background-color: #FFE1FF;
+}
+
+.band2 {
+  background-color: #FFE6FF;
+}
+
+.band3 {
+  background-color: #FFEBFF;
+}
+
+.band4 {
+  background-color: #FFF1FF;
+  clear: both;
+  min-height: 1px;
+}
+
+header, nav, section {
+  max-width: 1200px;
+  margin: auto;
+}
+
 header {
   padding: 5%;
-  margin: auto;
   text-align: center;
   font-size: 36px;
   font-family: 'Architects Daughter', cursive;
-  border-top: 10px solid #FFE6FF;
 }
 
 nav {
   padding: 2.5% 5% 5%;
   font-size: 20px;
-  border-top: 10px solid #FFE6FF;
 }
 
 nav ul {
@@ -49,8 +68,6 @@ a {
 
 section {
   padding: 2.5% 5%;
-  margin: auto;
-  border-top: 10px solid #FFE6FF;
 }
 
 h1 {
@@ -60,13 +77,12 @@ h1 {
 }
 
 .funFacts ul::before {
-  content: "Did you know?";
+  content: "About Me:";
   font-size: 20px;
   font-weight: bold;
 }
 
 .funFacts {
-  border-top: 10px solid #FFE6FF;
   padding-top: 2.5%;
 }
 
@@ -75,6 +91,7 @@ h1 {
   width: 52.5%;
   list-style: none;
   padding: 0px 2.5% 16px 0px;
+  background-color: white;
 }
 
 .funFacts li {
