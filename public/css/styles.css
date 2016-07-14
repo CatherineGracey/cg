@@ -90,8 +90,8 @@ h1 {
   float: left;
   width: 52.5%;
   list-style: none;
-  padding: 0px 2.5% 16px 0px;
-  background-color: white;
+  padding: 16px 2.5% 16px 1%;
+  background-color: #FFF1FF;
 }
 
 .funFacts li {
@@ -100,7 +100,7 @@ h1 {
 
 .topGraphic {
   float: right;
-  max-width: 42.5%;
+  max-width: 41.5%;
   max-height: 600px;
   padding: 0px 0px 16px 2.5%;
 }
