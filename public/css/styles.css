@@ -33,7 +33,7 @@ header, nav, section {
 header {
   padding: 5%;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 8vw;
   font-family: 'Architects Daughter', cursive;
 }
 
@@ -101,20 +101,6 @@ h1 {
   max-height: 600px;
 }
 
-@media (min-width: 599px) {
-  .funFacts ul {
-    float: left;
-    width: 52.5%;
-    padding: 16px 2.5% 16px 1%;
-  }
-
-  .topGraphic {
-    float: right;
-    max-width: 41.5%;
-    padding: 0px 0px 16px 2.5%;
-  }
-}
-
 .highlight {
   font-weight: bold;
 }
@@ -145,4 +131,22 @@ pre {
 
 pre p {
   margin: 0;
+}
+
+@media (min-width: 599px) {
+  header {
+    font-size: 3rem;
+  }
+
+  .funFacts ul {
+    float: left;
+    width: 52.5%;
+    padding: 16px 2.5% 16px 1%;
+  }
+
+  .topGraphic {
+    float: right;
+    max-width: 41.5%;
+    padding: 0px 0px 16px 2.5%;
+  }
 }
