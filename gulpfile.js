@@ -16,7 +16,7 @@ gulp.task("cleanCSS", function(){
 gulp.task("combCSS", function() {
   return gulp.src('css/*.css')
     .pipe(csscomb())
-    .pipe(gulp.dest('dev/styles'));
+    .pipe(gulp.dest('css'));
 });
 
 gulp.task("lintCSS", ["combCSS"], function() {

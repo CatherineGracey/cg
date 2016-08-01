@@ -1,157 +1,219 @@
-body {
-  padding: 0;
-  margin: auto;
-  background-color: #FFEBFF;
-  color: #551A8B;
-  font-family: 'Muli', sans-serif;
-  font-size: 1rem;
+body
+{
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    margin: auto;
+    padding: 0;
+
+    color: #551a8b;
+    background-color: #ffebff;
 }
 
-.band1 {
-  background-color: #FFE1FF;
+.band1
+{
+    background-color: #ffe1ff;
 }
 
-.band2 {
-  background-color: #FFE6FF;
+.band2
+{
+    background-color: #ffe6ff;
 }
 
-.band3 {
-  background-color: #FFEBFF;
+.band3
+{
+    background-color: #ffebff;
 }
 
-.band4 {
-  background-color: #FFF1FF;
-  clear: both;
-  min-height: 1px;
+.band4
+{
+    clear: both;
+
+    min-height: 1px;
+
+    background-color: #fff1ff;
 }
 
-header, nav, section {
-  max-width: 1200px;
-  margin: auto;
+header,
+nav,
+section
+{
+    max-width: 1200px;
+    margin: auto;
 }
 
-header {
-  padding: 5%;
-  text-align: center;
-  font-size: 8vw;
-  font-family: 'Architects Daughter', cursive;
+header
+{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 8vw;
+
+    padding: 5%;
+
+    text-align: center;
 }
 
-nav {
-  padding: 2.5% 5% 5%;
-  font-size: 1.25rem;
+nav
+{
+    font-size: 1.25rem;
+
+    padding: 2.5% 5% 5%;
 }
 
-nav ul {
-  list-style: none;
-  clear: both;
-  padding: 0;
+nav ul
+{
+    clear: both;
+
+    padding: 0;
+
+    list-style: none;
 }
 
-nav li {
-  display: inline-block;
-  padding-right: 2%;
+nav li
+{
+    display: inline-block;
+
+    padding-right: 2%;
 }
 
-nav a {
-  text-decoration: none;
-  padding: 5px;
+nav a
+{
+    padding: 5px;
+
+    text-decoration: none;
 }
 
-nav a:hover, nav a:active {
-  text-decoration: underline;
+nav a:hover,
+nav a:active
+{
+    text-decoration: underline;
 }
 
-a {
-  color: #551A8B;
+a
+{
+    color: #551a8b;
 }
 
-section {
-  padding: 2.5% 5%;
+section
+{
+    padding: 2.5% 5%;
 }
 
-h1 {
-  text-align: center;
-  padding: 2.5% 0px 5% 0px;
-  font-size: 1.75rem;
+h1
+{
+    font-size: 1.75rem;
+
+    padding: 2.5% 0 5% 0;
+
+    text-align: center;
 }
 
-.funFacts ul::before {
-  content: "About Me:";
-  font-size: 1.25rem;
-  font-weight: bold;
+.funFacts ul::before
+{
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    content: 'About Me:';
 }
 
-.funFacts {
-  padding-top: 2.5%;
+.funFacts
+{
+    padding-top: 2.5%;
 }
 
-.funFacts ul {
-  list-style: none;
-  background-color: #FFF1FF;
-  padding-left: 0;
+.funFacts ul
+{
+    margin-top: 0;
+    padding-left: 0;
+
+    list-style: none;
+
+    background-color: #fff1ff;
 }
 
-/*.funFacts*/ li {
-  padding: 0.5% 0px;
+/*.funFacts*/ li
+{
+    padding: .5% 0;
 }
 
-.topGraphic {
-  max-width: 100%;
-  max-height: 600px;
+.topGraphic
+{
+    max-width: 100%;
+    max-height: 600px;
 }
 
-.highlight {
-  font-weight: bold;
+.highlight
+{
+    font-weight: bold;
 }
 
-.highlight::after {
-  content: ": ";
+.highlight::after
+{
+    content: ': ';
 }
 
-.gallery, .entry, .gallery h2, .subEntry {
-  clear: both;
+.gallery,
+.entry,
+.gallery h2,
+.subEntry
+{
+    clear: both;
 }
 
-.subEntry {
-  border-top: 10px solid #FFE6FF;
-  padding-top: 20px;
+.subEntry
+{
+    padding-top: 20px;
+
+    border-top: 10px solid #ffe6ff;
 }
 
-.entry {
-  padding-bottom: 20px;
-  border-top: 10px solid #FFE6FF;
+.entry
+{
+    padding-bottom: 20px;
+
+    border-top: 10px solid #ffe6ff;
 }
 
-.spaced a {
-  padding: 0.5rem;
-  display: inline-block;
+.spaced a
+{
+    display: inline-block;
+
+    padding: .5rem;
 }
 
-pre {
-  background: black;
-  color: white;
-  padding: 5px;
+pre
+{
+    padding: 5px;
+
+    color: white;
+    background: black;
 }
 
-pre p {
-  margin: 0;
+pre p
+{
+    margin: 0;
 }
 
-@media (min-width: 599px) {
-  header {
-    font-size: 3rem;
-  }
+@media (min-width: 599px)
+{
+    header
+    {
+        font-size: 3rem;
+    }
 
-  .funFacts ul {
-    float: left;
-    width: 52.5%;
-    padding: 16px 2.5% 16px 1%;
-  }
+    .funFacts ul
+    {
+        float: left;
 
-  .topGraphic {
-    float: right;
-    max-width: 41.5%;
-    padding: 0px 0px 16px 2.5%;
-  }
+        width: 52.5%;
+        padding: 0 2.5% 16px 1%;
+    }
+
+    .topGraphic
+    {
+        float: right;
+
+        max-width: 41.5%;
+        padding: 0 0 16px 2.5%;
+    }
 }
