@@ -4,9 +4,16 @@
   "repository": "bitbucket:CatherineGracey/cg",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "gulp build"
   },
   "dependencies": {
-    "express": "~4.13.1"
+    "del": "^2.2.1",
+    "express": "~4.13.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-csslint": "^0.3.1",
+    "gulp-sourcemaps": "^1.6.0"
   }
 }
